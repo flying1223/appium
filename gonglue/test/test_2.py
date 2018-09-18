@@ -12,7 +12,6 @@ t_1()
 
 c = a + 1
 d = b + 1
-
 print c
 print d
 
