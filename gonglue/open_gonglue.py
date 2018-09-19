@@ -11,14 +11,16 @@ desired_caps['platformName'] = 'Android'
 desired_caps['platformVersion'] = '5.1'
 desired_caps['deviceName'] = 'NX511J'
 desired_caps['appPackage'] = 'com.Qunar'
-desired_caps['appActivity'] = 'com.mqunar.splash.SplashActivity'
+#desired_caps['appActivity'] = 'com.mqunar.splash.SplashActivity'
+desired_caps['appActivity'] = 'com.mqunar.react.base.stack.container.QReactNativeActivity1'
 #进入大客户端首页
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps)
 time.sleep(15)
 
-scheme_url = 'hysdk.sniff.scheme + `://react/open?hybridId=in_gonglue_guide_rn&pageName=NtSmartPage&initProps=${encodeU' \
-             'RIComponent(JSON.stringify({"param":{"book":"7089577"}}))}`'
-driver.start_activity('com.Qunar','com.mqunar.react.base.stack.container.QReactNativeActivity1',optional_intent_arguments = scheme_url)
+# scheme_url = 'hysdk.sniff.scheme + `://react/open?hybridId=in_gonglue_guide_rn&pageName=NtSmartPage&initProps=${encodeU' \
+#             'RIComponent(JSON.stringify({"param":{"book":"7089577"}}))}`'
+#driver.start_activity('com.Qunar','com.mqunar.react.base.stack.container.QReactNativeActivity1',optional_intent_arguments = scheme_url)
+#driver.start_activity('com.Qunar','com.mqunar.react.base.stack.container.QReactNativeActivity1')
 
 time.sleep(15)
 print (666)
